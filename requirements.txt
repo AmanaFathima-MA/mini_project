@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+torch --extra-index-url https://download.pytorch.org/whl/cpu
+transformers
+scikit-learn
+joblib
+pillow
+pytesseract
+pydantic
+numpy
+python-multipart

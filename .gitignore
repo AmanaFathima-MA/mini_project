@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+__pycache__/
+*.pyc
+
+# Local Database & Logs
+*.db
+*.log
+.env
+
+# Heavy Datasets and Raw Reports (not needed for deployment)
+fir_dataset_icdar2023/
+sample_fir_images/
+reports/
+sample_fir_texts/
