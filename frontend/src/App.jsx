@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Upload, Download, AlertCircle, FileText } from 'lucide-react';
 
-const BACKEND_URL = 'http://localhost:5000/api/fir';
+const BACKEND_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+  ? 'http://localhost:5000/api/fir'
+  : `http://${window.location.hostname}:5000/api/fir`;
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('text');
